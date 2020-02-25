@@ -1,0 +1,1 @@
+import sys;print("".join([chr((((ord(i) + int(sys.argv[1])) - 65) % 26) + 65) if 65 <= ord(i) <= 90 else i for i in sys.argv[2].upper()]))
